@@ -1,0 +1,62 @@
+.footer-section{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    text-align: center;
+    padding: 45px 45px 5px 45px;
+}
+
+.footer-logo{
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.footer-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pages p{
+    margin-right: 1.5rem;
+    color: rgb(221, 229, 235);
+    cursor: pointer;
+}
+ 
+.icon-sec img{
+    color: white;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    width: 32px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+.footer-credit{
+    color: rgb(212, 212, 212);
+    font-size: 14px;
+    margin-top: 1.5rem;
+   
+}
+.footer-credit p{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .footer-pages{
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .footer-pages p{
+        font-size: 14px;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .icon-sec img{
+        width: 20px;
+        margin: auto 1rem;
+
+    }
+    .footer-credit{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+}
