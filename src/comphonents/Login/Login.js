@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import OtherLoginSystem from '../OtherLoginSystem/OtherLoginSystem';
 import './Login.css'
 
 const Login = () => {
@@ -18,7 +19,9 @@ const Login = () => {
                     <div className='register-text'>
                         <p>Don't have an account? <span onClick={()=>navigate('/sign-up')}>SignUp here!</span></p>
                     </div>
+                    <OtherLoginSystem></OtherLoginSystem>
             </div>
+            
 
         </div>
     );

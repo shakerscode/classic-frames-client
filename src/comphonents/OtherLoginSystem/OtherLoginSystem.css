@@ -1,0 +1,57 @@
+.other-login-system{
+    margin-top: 2rem;
+}
+.or-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.or-text{
+    font-size: 19px;
+    background-color: white;
+    margin-top: -8px;
+    padding: 10px 25px;
+    font-weight: 400;
+}
+.border-one, .border-two{
+    border: 1px solid gray;
+    width: 50%;
+}
+.login-systems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 1rem auto;
+    background-color: rgb(234, 232, 232);
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.login-systems:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.login-systems h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+@media screen and (max-width: 650px) {
+    .or-text{
+        padding: 10px 15px;
+    }
+    .login-systems{
+        width: 100%;
+    }
+    .login-systems img{
+        width: 30px;
+    }
+    .login-systems h4{
+        font-size: 15px;
+    }
+    
+}

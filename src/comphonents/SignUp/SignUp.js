@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import OtherLoginSystem from '../OtherLoginSystem/OtherLoginSystem';
 import './SignUp.css'
 const SignUp = () => {
     const navigate = useNavigate()
@@ -17,6 +18,7 @@ const SignUp = () => {
                     <div className='already-have-account-text'>
                         <p>Already have an account? <span onClick={()=>navigate('/login')}>Login here!</span></p>
                     </div>
+                    <OtherLoginSystem></OtherLoginSystem>
 
             </div>
         </div>
