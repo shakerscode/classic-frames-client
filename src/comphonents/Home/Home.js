@@ -14,7 +14,7 @@ const Home = () => {
             <div className='home-banner '>
                 
             </div>
-            <div id='' className="my-services">
+            <div id='services' className="my-services">
                 <div className="services-header">
                     <h1>Services</h1>
                     <p>Best Offer for you!</p>

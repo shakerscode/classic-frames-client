@@ -15,7 +15,7 @@ const Navbar = () => {
              <h1 className='logo-section'>Classic Frames</h1>
              <ul className={toggleIcon ? 'nav-link-mobile ' : 'nav-link'} onClick={()=>setToggleIcon(!toggleIcon)}>
                     <Link className='links' to='/'>Home</Link>
-                    <Link className='links' to='/services'>Services</Link>
+                    <Link className='links' to='#services'>Services</Link>
                     <Link className='links' to='/'>About Me</Link>
                     <Link className='links' to='/'>Contact Me</Link>
                     <Link className='links' to='/login'>Login</Link>
