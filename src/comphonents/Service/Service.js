@@ -1,9 +1,11 @@
 import React from 'react';
 import './Service.css'
 import { CameraIcon } from '@heroicons/react/solid'
+import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ service }) => {
+    const navigate = useNavigate();
     const { name, img, price, description, shootingTime } = service;
     return (
         <div className='service-section'>
@@ -15,7 +17,7 @@ const Service = ({ service }) => {
                 <CameraIcon className='camera-icon'></CameraIcon> <span>{shootingTime}</span>
                 </div>
                 <p className='service-description'>{description}</p>
-                <button>Book Now</button>
+                <button onClick={()=>navigate('/checkout')}>Book Now</button>
             </div>
         </div>
     );

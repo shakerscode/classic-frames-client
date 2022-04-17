@@ -12,7 +12,7 @@ const SignUp = () => {
     const [email, setEmail] = useState({ value: '', error: '' });
     const [password, setPassword] = useState({ value: '', error: '' });
     const [confPassword, setConfPassword] = useState({ value: '', error: '' });
-    
+
 
 
     const [
@@ -40,38 +40,38 @@ const SignUp = () => {
     }
     const getConfPassValue = e => {
         const confirmPass = e.target.value;
-        
-        if (password.value === confirmPass){
-            setConfPassword({value: confPassword, error: ''})
-        }else{
-            setConfPassword({value: '', error: "Password don't match"})
+
+        if (password.value === confirmPass) {
+            setConfPassword({ value: confPassword, error: '' })
+        } else {
+            setConfPassword({ value: '', error: "Password don't match" })
         }
     }
-  
-    const signUpHandel = (e) => {
-        e.preventDefault();
-        if(email.value === ''){
-            setEmail({value:'', error: 'Email fild is empty'})
+
+    const signUpHandel = event => {
+        event.preventDefault();
+
+            
+        if (email.value === '') {
+            setEmail({ value: '', error: 'Email fild is empty' })
             return;
         }
-        if(password.value === ''){
-            setPassword({value: '', error: 'Password fild is empty'})
+        if (password.value === '') {
+            setPassword({ value: '', error: 'Password fild is empty' })
             return;
         }
-        if(email.value && password.value && confPassword.value === password.value){
             createUserWithEmailAndPassword(email.value, password.value);
-            if (newUserError) {
-                return toast.error(newUserError.message );
-               
-              }
-              if (newUserLoading) {
-                return toast.success('Loading...');
-              }
-              if (newUser) {
-                return navigate('/')
-              } 
-        }
-       
+ 
+
+    }
+    if (newUser) {
+        return navigate('/')
+    }
+    if (newUserLoading) {
+        return toast.success('Loading...', {id: 'load'});
+    }
+    if (newUserError) {
+          toast.error(newUserError.message, {id: 'error'});
 
     }
 
@@ -87,13 +87,13 @@ const SignUp = () => {
                     }
                     <input onBlur={getPasswordValue} type="password" name="password" id="password" placeholder='Password' required />
                     {
-                     password?.error && <p className='error'>{password.error}</p>   
+                        password?.error && <p className='error'>{password.error}</p>
                     }
                     <input onBlur={getConfPassValue} type="password" name="confirmPassword" id="confirmPassword" placeholder='Confirm password' required />
                     {
                         confPassword?.error && <p className='error'>{confPassword.error}</p>
                     }
-                    <input id='signup-btn' type="submit" value="Sign Up" />
+                    <input  id='signup-btn' type="submit" value="Sign Up" />
                 </form>
                 <div className='already-have-account-text'>
                     <p>Already have an account? <span onClick={() => navigate('/login')}>Login here!</span></p>

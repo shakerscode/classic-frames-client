@@ -12,11 +12,12 @@ const Navbar = () => {
     const [toggleIcon, setToggleIcon] = useState(false);
     const [user, loading] = useAuthState(auth);
 
+    // if(loading){
+    //      toast.success('Sinout successfull',{id: 'signout'})
+    // }
     const logOut =  () =>{
         signOut(auth);
-        if(loading){
-            return toast.success('Sinout successfull',{id: 'signout'})
-        }
+        
     }
     
     
@@ -28,12 +29,15 @@ const Navbar = () => {
              <ul className={toggleIcon ? 'nav-link-mobile ' : 'nav-link'} onClick={()=>setToggleIcon(!toggleIcon)}>
                     <Link className='links' to='/'>Home</Link>
                     <Link className='links' to='#services'>Services</Link>
-                    <Link className='links' to='/'>About Me</Link>
-                    <Link className='links' to='/'>Contact Me</Link>
+                    <Link className='links' to='/about-me'>About Me</Link>
+                    <Link className='links' to='/blog'>Blog</Link>
+                    <Link className='links' to='/checkout'>CheckOut</Link>
                     {
                         user 
                         ? 
+                        <>
                         <Link onClick={logOut} className='links' to='/login'>Log Out</Link>
+                        </>
                         :
                         <Link className='links' to='/login'>Login</Link>
                     }
