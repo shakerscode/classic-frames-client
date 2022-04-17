@@ -63,7 +63,8 @@
     .logo-section {
         display: flex;
         position: absolute;
-        top: 13px;
+        font-size: 22px;
+        top: 20px;
         left: 35px;
         font-weight: 600;
     }

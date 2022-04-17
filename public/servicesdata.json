@@ -1,0 +1,22 @@
+[{
+    "id": "1",
+    "name": "Starter",
+    "price": 799,
+    "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
+    "description": "Description comming soon"
+ },
+{
+    "id": "2",
+    "name": "Advanced",
+    "price": 1599,
+    "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
+    "description": "Description comming soon"
+},
+{
+    "id": "3",
+    "name": "Premium",
+    "price": 2099,
+    "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
+    "description": "Description comming soon"
+}
+]

@@ -1,0 +1,21 @@
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 4rem auto;
+}
+.services-header{
+    text-align: center;
+    margin-top: 1rem;
+}
+.services-header h1{
+    font-weight: 600;
+}
+@media screen and (max-width: 650px) {
+    .services-section{
+        grid-template-columns: 1.5fr;
+    }
+    
+}

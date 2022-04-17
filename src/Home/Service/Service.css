@@ -1,0 +1,52 @@
+.service-section {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid gainsboro;
+    /* box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff; */
+}
+.service-section:nth-child(2){
+    background-color: #f1f0f0;
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+}
+.service-section:hover{
+    background-color: #f1f0f0;
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+
+}
+.service-section img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 35px 35px 10px 10px;
+}
+.service-info{
+    padding: 20px;
+}
+.service-info h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.service-info button{
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+.service-info button:hover{
+    background-color: #252323;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+
+    
+}
