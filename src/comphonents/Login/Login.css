@@ -1,0 +1,82 @@
+.login-section{
+    width: 60%;
+    margin: 3rem auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 5px 60px 0px #9290906b;
+}
+.login-header{
+    font-weight: 500;
+    border-bottom: 1px solid rgba(108, 106, 106, 0.64);
+    width: 40%;
+    margin:2rem auto;
+    padding-bottom: .6rem;
+}
+.login-forum{
+    margin-top: 1.5rem;
+}
+.login-forum input{
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    padding: 0px 10px ;
+    margin-bottom: 1.5rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 17px;
+}
+.login-forum input:hover{
+    border-bottom: 1px solid black;
+}
+.reset-password{
+    margin-bottom: 1rem;
+}
+.reset-password span{
+    text-decoration: none;
+    font-weight: 600;
+}
+#login-btn{
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    height: 50px;
+}
+#login-btn:hover{
+    background-color: #ffff;
+    color: black;
+    border: 1px solid black;
+}
+.register-text span{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 650px) {
+    .login-header{
+        width: 100%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .login-forum input{
+        width: 100%;
+        font-size: 14px;
+        padding: 0;
+    }
+    .reset-password{
+        font-size: 16px;
+    }
+    #login-btn{
+        font-size: 16px;
+    }
+    .register-text span{
+        font-size: 16px;
+         
+    }
+}

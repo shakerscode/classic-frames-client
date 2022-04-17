@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
-import Service from './Service/Service';
+import Service from '../Service/Service';
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -11,14 +11,17 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <div className="my-services">
+            <div className='home-banner '>
+                
+            </div>
+            <div id='' className="my-services">
                 <div className="services-header">
-                <h1>Services</h1>
-                <p>Best Offer for you!</p>
+                    <h1>Services</h1>
+                    <p>Best Offer for you!</p>
                 </div>
                 <div className='services-section'>
                     {
-                        services.map(service => <Service service={service}></Service>)
+                        services.map(service => <Service key={service.id} service={service}></Service>)
                     }
                 </div>
             </div>

@@ -5,7 +5,7 @@
     /* box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #ffffff; */
 }
-.service-section:nth-child(2){
+.service-section:nth-child(3){
     background-color: #f1f0f0;
     box-shadow: 15px 15px 30px #bebebe,
     -15px -15px 30px #ffffff;
@@ -26,7 +26,12 @@
 }
 .service-info h3{
     margin-bottom: 5px;
+    font-size: 25px;
+}
+.service-info h6{
+    margin: 10px auto;
     font-size: 20px;
+    font-weight: 400;
 }
 .service-info button{
     border: none;
@@ -44,6 +49,23 @@
     background-color: #252323;
     color: white;
     transition: .5s ease-in-out;
+}
+.shooting-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+.shooting-info span{
+    margin-left: 5px;
+}
+.camera-icon{
+    width: 20px;
+}
+.service-description{
+    font-size: 16px;
 }
 
 @media screen and (max-width: 650px) {

@@ -1,19 +1,31 @@
+.home-banner {
+    margin-top: 0;
+    background-image: url(../../images/wedding-banner.png);
+    width: 100%;
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 .services-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     text-align: center;
     width: 80%;
-    margin: 4rem auto;
+    margin: 3rem auto;
 }
 .services-header{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .services-header h1{
     font-weight: 600;
 }
 @media screen and (max-width: 650px) {
+    .home-banner {
+        height: 500px;
+    }
     .services-section{
         grid-template-columns: 1.5fr;
     }

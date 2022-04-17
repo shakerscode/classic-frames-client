@@ -2,21 +2,24 @@
     "id": "1",
     "name": "Starter",
     "price": 799,
+    "shootingTime": "Shooting time 5 hours",
     "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
-    "description": "Description comming soon"
+    "description": "Simple photo processing. Couple shoot or single photography"
  },
 {
     "id": "2",
     "name": "Advanced",
     "price": 1599,
+    "shootingTime": "Shooting time 9 hours",
     "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
-    "description": "Description comming soon"
+    "description": "Professional photo processing without videography ."
 },
 {
     "id": "3",
     "name": "Premium",
     "price": 2099,
+    "shootingTime": "Shooting time 12 hours",
     "img": "https://img.freepik.com/free-photo/couple-dancing-ther-wedding_1157-93.jpg",
-    "description": "Description comming soon"
+    "description": "Professional photo processing with a short 20 min videography."
 }
 ]

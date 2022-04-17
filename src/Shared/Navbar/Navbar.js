@@ -9,16 +9,16 @@ const Navbar = () => {
      
 
     return (
-       <div className='home-banner '>
+       <div className=''>
            <div className='header-bg'>
            <nav className='nav-bar'>
              <h1 className='logo-section'>Classic Frames</h1>
              <ul className={toggleIcon ? 'nav-link-mobile ' : 'nav-link'} onClick={()=>setToggleIcon(!toggleIcon)}>
                     <Link className='links' to='/'>Home</Link>
-                    <Link className='links' to='/'>Services</Link>
+                    <Link className='links' to='/services'>Services</Link>
                     <Link className='links' to='/'>About Me</Link>
                     <Link className='links' to='/'>Contact Me</Link>
-                    <Link className='links' to='/'>Login</Link>
+                    <Link className='links' to='/login'>Login</Link>
              </ul>
 
             <div className='btn menu-icon' onClick={()=>setToggleIcon(!toggleIcon)}>
