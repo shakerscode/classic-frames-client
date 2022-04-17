@@ -37,6 +37,7 @@
     border: none;
     font-size: 18px;
     height: 50px;
+    cursor: pointer;
 }
 #signup-btn:hover{
     background-color: #ffff;
