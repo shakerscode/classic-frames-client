@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Toaster } from 'react-hot-toast';
 import Home from './comphonents/Home/Home';
 import Login from './comphonents/Login/Login';
 import SignUp from './comphonents/SignUp/SignUp';
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
+      <Toaster />
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
