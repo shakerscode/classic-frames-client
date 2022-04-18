@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import toast from 'react-hot-toast';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -19,11 +19,13 @@ const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
 
+    //reset password hook
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
+    //create pass hook
     const [
         signInWithEmailAndPassword,
-        signInUser,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
@@ -52,6 +54,15 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    //Handel reset password 
+    const resetPassword = async () => {
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast.success('Sent password reset email',{id: 'Sending reset password email'});
+        }else{
+            toast.error('Please enter your valid email name',{id: 'Error'})
+        }
+    }
 
     return (
         <div>
@@ -72,14 +83,14 @@ const Login = () => {
                             :
                             ''
                     }
-                    <p className='reset-password'>Forget Password? <span> Reset please.</span></p>
+                    <p className='reset-password'>Forget Password? <i onClick={resetPassword}> Reset please.</i></p>
                     {
                         error?.message && <p>{error.message}</p>
                     }
                     <input id='login-btn' type="submit" value="Login" />
                 </form>
                 <div className='register-text'>
-                    <p>Don't have an account? <span onClick={() => navigate('/sign-up')}>SignUp here!</span></p>
+                    <p>Don't have an account? <i onClick={() => navigate('/sign-up')}>SignUp here!</i></p>
                 </div>
                 <OtherLoginSystem></OtherLoginSystem>
             </div>

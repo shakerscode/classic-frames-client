@@ -34,9 +34,11 @@
 .reset-password{
     margin-bottom: 1rem;
 }
-.reset-password span{
+.reset-password i{
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
 }
 #login-btn{
     padding: 10px 20px;
@@ -50,12 +52,14 @@
     color: black;
     border: 1px solid black;
 }
-.register-text span{
+.register-text i{
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
     color: black;
     cursor: pointer;
+    text-decoration: underline;
+
 }
 
 
