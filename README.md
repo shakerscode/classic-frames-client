@@ -2,7 +2,7 @@
 
 # This is my live project Link [Classic Frames](https://classic-frames.web.app/).
 
-> This project is about an individual provider who serve some services of his work. I choose the photographer niche from my trainer's suggestion. Then I gathered some knowledge about an individual providers website design and learnt some basic things that should be included in this kind of websites. Than I started design and functionality. I wish, I could do this website properly. But I don't know why I wouldn't able to complete is properly as i want. Though i made it full responsive. That the one things I think i did fo far well from my others project. 
+> This project is about an individual provider who serve some services of his work. I choose the photographer niche from my trainer's suggestion. Then I gathered some knowledge about an individual providers website design and learnt some basic things that should be included in this kind of websites. Than I started design and functionality. I wish, I could do this website properly. But I don't know why I wouldn't able to complete is properly as I want. Though I made it full responsive. That's the one things I think I did so far well from my other projects. 
 
 # Project Intro: 
 This is a photographer website who's profession is photography. He likes to capture moment in a frame. That's the reason why this website's name is Classic Frames. Here, he serve his several services.
@@ -21,7 +21,7 @@ This is a photographer website who's profession is photography. He likes to capt
 * Made a protected route 
 
 End. This is the short list that  i did with this project.Thank you!
- 
+
 
 
 
