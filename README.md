@@ -1,6 +1,34 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This is my live project Link [Classic Frames](https://classic-frames.web.app/).
+
+> This project is about an individual provider who serve some services of his work. I choose the photographer niche from my trainer's suggestion. Then I gathered some knowledge about an individual providers website design and learnt some basic things that should be included in this kind of websites. Than I started design and functionality. I wish, I could do this website properly. But I don't know why I wouldn't able to complete is properly as i want. Though i made it full responsive. That the one things I think i did fo far well from my others project. 
+
+# Project Intro: 
+This is a photographer website who's profession is photography. He likes to capture moment in a frame. That's the reason why this website's name is Classic Frames. Here, he serve his several services.
+
+## What I did in this web app and what I used here? Let's know step by step about my journey with this web app!
+
+* Installed React and connect it with github.
+* Search google for a photographer website's name suggestion.
+* Installed React Router
+* Installed Hero Icon
+* Designed navbar and made it responsive.
+* Made a service fake data and shown it in the service section.
+* Designed login and signin section and made them responsive.
+* Created a project in react firebase project and installed firebase for login and signin authentication.
+* Implement those system with google login.
+* Made a protected route 
+
+End. This is the short list that  i did with this project.Thank you!
+ 
+
+
+
+
+
+
+
 
 ## Available Scripts
 

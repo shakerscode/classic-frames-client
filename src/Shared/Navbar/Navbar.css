@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-
+.main-nav{
+    position: sticky;
+    top: 0;
+}
 
 .header-bg {
     background-color: rgba(0, 0, 0, 0.829);
+
 }
 
 .nav-bar {
@@ -17,6 +21,7 @@
     height: 70px;
     width: 80%;
     margin: auto;
+
 
 }
 

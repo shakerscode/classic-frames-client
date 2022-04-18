@@ -11,6 +11,7 @@ import CheckOut from './comphonents/CheckOut/CheckOut';
 import AboutMe from './comphonents/AboutMe/AboutMe';
 import Blog from './comphonents/Blog/Blog';
 import Notfound from './comphonents/NotFound/Notfound';
+import Gallery from './comphonents/Gallery/Gallery';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Toaster />
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/gallery' element={<Gallery></Gallery>}></Route>
           <Route path='/about-me' element={<AboutMe></AboutMe>}></Route>
           <Route path='/blog' element={<Blog></Blog>}></Route>
           <Route path='/checkout' element={

@@ -20,13 +20,13 @@ const Navbar = () => {
     
     
     return (
-       <div className=''>
+       <div className='main-nav'>
            <div className='header-bg'>
            <nav className='nav-bar'>
              <h1 className='logo-section'>Classic Frames</h1>
              <ul className={toggleIcon ? 'nav-link-mobile ' : 'nav-link'} onClick={()=>setToggleIcon(!toggleIcon)}>
                     <Link className='links' to='/'>Home</Link>
-                    <Link className='links' to='#services'>Services</Link>
+                    <Link className='links' to='/gallery'>Gallery</Link>
                     <Link className='links' to='/about-me'>About Me</Link>
                     <Link className='links' to='/blog'>Blog</Link>
                     <Link className='links' to='/checkout'>CheckOut</Link>
