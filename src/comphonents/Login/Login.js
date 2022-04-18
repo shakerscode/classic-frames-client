@@ -12,8 +12,8 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    // const [user] = useAuthState(auth);
-    let from = location.state?.from?.pathname || "/";
+    const [user] = useAuthState(auth);
+    const from = location.state?.from?.pathname || "/";
 
 
 
@@ -23,7 +23,7 @@ const Login = () => {
 
     const [
         signInWithEmailAndPassword,
-        user,
+        signInUser,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
@@ -37,7 +37,7 @@ const Login = () => {
         setPassword(password)
     }
     if (user) {
-        navigate(from, { replace: true });
+        return navigate(from, { replace: true });
     }
     if (loading) {
         return toast.success('Loading', { id: 'load' })

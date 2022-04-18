@@ -60,6 +60,9 @@
 }
 
 @media screen and (max-width: 650px) {
+    .signup-section{
+        width: 80%;
+    }
     .signup-header{
         width: 100%;
         font-size: 17px;

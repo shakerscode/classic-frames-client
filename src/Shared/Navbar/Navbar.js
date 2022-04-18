@@ -12,9 +12,7 @@ const Navbar = () => {
     const [toggleIcon, setToggleIcon] = useState(false);
     const [user, loading] = useAuthState(auth);
 
-    // if(loading){
-    //      toast.success('Sinout successfull',{id: 'signout'})
-    // }
+
     const logOut =  () =>{
         signOut(auth);
         

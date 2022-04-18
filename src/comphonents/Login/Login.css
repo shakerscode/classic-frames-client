@@ -60,6 +60,9 @@
 
 
 @media screen and (max-width: 650px) {
+    .login-section{
+        width: 80%;
+    }
     .login-header{
         width: 100%;
         font-size: 17px;
