@@ -6,6 +6,7 @@ import './SignUp.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import toast from 'react-hot-toast';
 
+
 const SignUp = () => {
     const navigate = useNavigate();
 
@@ -13,14 +14,16 @@ const SignUp = () => {
     const [password, setPassword] = useState({ value: '', error: '' });
     const [confPassword, setConfPassword] = useState({ value: '', error: '' });
 
-
-
+    //create user with email and password
     const [
         createUserWithEmailAndPassword,
         newUser,
         newUserLoading,
         newUserError,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+
+
+    //getting all inputs value
 
     const getEmailValue = e => {
         const email = e.target.value;
@@ -48,10 +51,12 @@ const SignUp = () => {
         }
     }
 
-    const signUpHandel = event => {
+    //handeling signup 
+
+    const signUpHandel = async event => {
         event.preventDefault();
 
-            
+
         if (email.value === '') {
             setEmail({ value: '', error: 'Email fild is empty' })
             return;
@@ -60,18 +65,21 @@ const SignUp = () => {
             setPassword({ value: '', error: 'Password fild is empty' })
             return;
         }
-            createUserWithEmailAndPassword(email.value, password.value);
- 
-
+        createUserWithEmailAndPassword(email.value, password.value);
+        toast.success('Email verification sent')
     }
+
+
+    //conditions
+
     if (newUser) {
         return navigate('/')
     }
     if (newUserLoading) {
-        return toast.success('Loading...', {id: 'load'});
+        return toast.success('Loading...', { id: 'load' });
     }
     if (newUserError) {
-          toast.error(newUserError.message, {id: 'error'});
+        toast.error(newUserError.message, { id: 'error' });
 
     }
 
@@ -93,7 +101,7 @@ const SignUp = () => {
                     {
                         confPassword?.error && <p className='error'>{confPassword.error}</p>
                     }
-                    <input  id='signup-btn' type="submit" value="Sign Up" />
+                    <input id='signup-btn' type="submit" value="Sign Up" />
                 </form>
                 <div className='already-have-account-text'>
                     <p>Already have an account? <span onClick={() => navigate('/login')}>Login here!</span></p>
