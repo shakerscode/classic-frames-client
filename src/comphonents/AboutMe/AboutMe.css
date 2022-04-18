@@ -1,0 +1,23 @@
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.my-image img {
+    width: 100%;
+}
+
+.my-infop {
+    padding: 20px;
+}
+
+@media screen and ( max-width: 650px) {
+    .about-me{
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 4rem auto;
+    }
+}

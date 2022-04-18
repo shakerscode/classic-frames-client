@@ -1,6 +1,4 @@
-.blog {
-    height: 550px;
-}
+
 
 .blog-post {
     display: grid;
@@ -23,6 +21,9 @@
 .post h4 {
     text-align: center;
     padding: 10px;
+}
+.post p{
+    padding: 20px;
 }
 
 @media screen and (max-width:650px) {
